@@ -4,5 +4,5 @@ THIS IS IMPLEMENTED IN PYTHON + TKINTER.
 It uses certain features like 
 * nmap
 * whois.
-* ip-address
-**More feature will be added ***
+* ip-address 
+**/n More feature will be added ***
