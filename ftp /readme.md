@@ -8,7 +8,7 @@ For testing a test server is also added .
 To use 
 
 
-Run ftpserver.py on one terminal and ftpclient.py on the other , in the ftpserver.py change the directory according to your need i.e home/<your name>/
+Run ftpserver.py on one terminal and ftpclient.py on the other , in the ftpserver.py change the directory according to your need i.e home/ -your name- /
  
 The gui of ftpclient is self explanatory
  
