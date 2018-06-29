@@ -1,16 +1,20 @@
 import socket
 import os
+import threading 
+from tkinter import *
+def ip(label):
+	label.delete('1.0',END)
 
-def ip(url,label):
-    return label.config(text=socket.gethostbyname(url)+'\n')
+	label.insert(END,os.popen('ip -h').read()+'\n')
 
-def whois(url,label):
-	st='whois '+ url
+def whois(label):
+	st='whois -h'
 	proc=os.popen(st)
+	label.delete('1.0',END)
+	label.insert(END,proc.read())
 
-	label.config(text=proc.read())
-
-def nmap(url,label):
-	st='nmap '+url
+def nmap(label):
+	st='nmap -h'
 	proc=os.popen(st)
-	label.config(text=proc.read())
+	label.delete('1.0',END)
+	label.insert(END,proc.read())
