@@ -13,8 +13,9 @@ import os
 
 image_folder = 'sample'
 video_name = 'video.avi'
-
-
+directory = 'sample'
+if not os.path.exists(directory):
+	os.makedirs(directory)
 
 def choose(actions,row,col):
     g=36
